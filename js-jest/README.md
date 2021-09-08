@@ -2,30 +2,11 @@
 
 This is the Gilded Rose kata in JavaScript with Jest
 
-## Getting started
+## Overall Thoughts
 
-Install dependencies
+I think I made an improvement on the readability of the code. The original was a bunch of nested if statments, and personally, it was hard for me to 
+understand the logic behind the code at first glance. In my version, I split a lot of the logic into multiple methods. This way, it would make the "updateQuality"
+method cleaner and readable. I have also included more tests for each item category!
 
-```sh
-npm install
-```
+I am open to any advice or feedback you may have!
 
-## Running tests
-
-To run all tests
-
-```sh
-npm test
-```
-
-To run all tests in watch mode
-
-```sh
-npm run test:watch
-```
-
-To generate test coverage report
-
-```sh
-npm run test:coverage
-```
