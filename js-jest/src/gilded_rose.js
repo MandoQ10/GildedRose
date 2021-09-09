@@ -1,3 +1,5 @@
+//Challenge: 
+
 
 class Item {
   constructor(name, sellIn, quality){
@@ -114,11 +116,8 @@ class Shop {
   }
 
   isDefaultItem(item){
-    if(this.isAgedBrie(item) || this.isBackstagePasses(item) || this.isSulfuras(item) || this.isConjured(item)){
-      return false;
-    }else{
-      return true;
-    }
+    return !(this.isAgedBrie(item) || this.isBackstagePasses(item) || this.isSulfuras(item) || this.isConjured(item))
+    
   }
 
   isValidQuality(item){

@@ -1,4 +1,9 @@
 const {Shop, Item} = require("../src/gilded_rose");
+//remove. There is a for each hook (test hooks)
+//Before each and after each test hooks.
+//Dry vs wet code 
+//Avoid using raw strings: Store them in variables that way it is easy to change the strings vs changing them in eash instance 
+
 
 describe("Items are of the given categories", function() {
   it("should return true because all items are of the 3 categories", function() {
@@ -7,7 +12,7 @@ describe("Items are of the given categories", function() {
     const items = gildedRose.updateQuality();
     
     var result = true;
-    for(let i = 0; i < items.length; i++){
+    for(let i = 0; i < gildedRose.items.length; i++){
       if(gildedRose.isDefaultItem(items[i])){
         result = false;
       }
